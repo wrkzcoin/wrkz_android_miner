@@ -42,24 +42,8 @@ public class Config {
         mAlgos.add(new AlgoItem("cn-heavy/xhv", ""));
         mAlgos.add(new AlgoItem("cn-heavy/tube", ""));
         mAlgos.add(new AlgoItem("cn-pico/trtl", ""));
-        mAlgos.add(new AlgoItem("cryptonight-upx/2", "-upx"));
-
-        //User Defined
-        mPools.add(new PoolItem("custom", "custom", "", "", "", "", "", "", ""));
-
-        // uPlexa (UPX)|upx.pool.mine2gether.com:2223|cryptonight-upx/2
-        mPools.add(new PoolItem(
-                        "upx",
-                        "uPlexa (UPX)",
-                        "upx.pool.mine2gether.com:2223",
-                        "cryptonight-upx/2",
-                        "https://upx.mine2gether.com/api",
-                        "https://upx.mine2gether.com",
-                        "https://upx.mine2gether.com/#my_stats",
-                        "https://upx.mine2gether.com/#getting_started",
-                        ""
-                )
-        );
+        mAlgos.add(new AlgoItem("chukwa", ""));
+        mAlgos.add(new AlgoItem("chukwa/wrkz", ""));
 
         // Loki Network (LOKI) + Turtlecoin (TRTL) Merged Mining|loki.pool.mine2gether.com:2221|cn-pico/trtl
         mPools.add(new PoolItem(
@@ -131,6 +115,19 @@ public class Config {
                 )
         );
 
+        // WrkzCoin TestNet (TRTL)|trtl.pool.mine2gether.com:2225|cn-pico/trtl
+        mPools.add(new PoolItem(
+                        "wrkz",
+                        "WrkzCoin TestNet (WRKZ)",
+                        "testnet.wrkz.work:5555",
+                        "chukwa/wrkz",
+                        "http://testnet.wrkz.work:8117",
+                        "http://139.162.29.140/testwrkz/",
+                        "http://139.162.29.140/testwrkz/#my_stats",
+                        "http://139.162.29.140/testwrkz//#getting_started",
+                        ""
+                )
+        );
         /*
         mPools.add(new PoolItem(
                         "",

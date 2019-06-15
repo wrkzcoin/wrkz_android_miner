@@ -96,9 +96,13 @@ public class MiningService extends Service {
         String assetPath = "";
 
         if (abi.equals("arm64-v8a")) {
-            assetPath = "aarch64";
+            assetPath = "arm64";
         } else if (abi.equals("armeabi-v7a")) {
-            assetPath = "armv7";
+            assetPath = "arm";
+        } else if (abi.equals("x86")) {
+            assetPath = "x86";
+        } else if (abi.equals("x86_64")) {
+            assetPath = "x86_64";
         } else {
             Log.i(LOG_TAG, "NO ASSET PATH");
         }
@@ -236,7 +240,7 @@ public class MiningService extends Service {
         try {
             Tools.writeConfig(configTemplate, config.algo, config.pool, config.username, config.pass, config.threads, config.maxCpu, config.av, privatePath);
 
-            String[] args = {"./xmrig"};
+            String[] args = {"./xmrig-notls"};
 
             ProcessBuilder pb = new ProcessBuilder(args);
 
