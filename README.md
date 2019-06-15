@@ -1,4 +1,7 @@
-# m2g_android_miner
+# wrkz_android_miner
+
+**Binary of xmrig-notls**
+The binary files in `app\src\main\assets\` are compiled from https://github.com/wrkzcoin/trtlrig/tree/add_chukwa_wrkz
 
 **A simple cryptocurrency miner for android devices.**
 
