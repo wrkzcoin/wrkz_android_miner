@@ -1,7 +1,7 @@
 // Copyright (c) 2019, Mine2Gether.com
 //
 // Please see the included LICENSE file for more information.
-package m2g.mine2gether.androidminer;
+package work.wrkz.androidminer;
 
 import android.os.AsyncTask;
 import android.util.Log;

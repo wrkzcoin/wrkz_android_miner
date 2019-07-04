@@ -183,58 +183,6 @@
                         android:spinnerMode="dropdown" />
 
                     <android.support.v7.widget.AppCompatTextView
-                        android:layout_width="match_parent"
-                        android:layout_height="25dp"
-                        android:layout_marginTop="5dp"
-                        android:gravity="bottom"
-                        android:text="Miner"
-                        android:textStyle="bold" />
-
-                    <android.support.v7.widget.AppCompatSpinner
-                        android:id="@+id/minerSpinner"
-                        style="@style/Widget.AppCompat.Spinner.Underlined"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:spinnerMode="dropdown" />
-
-                    <android.support.v7.widget.AppCompatTextView
-                        android:layout_width="match_parent"
-                        android:layout_height="25dp"
-                        android:layout_marginTop="5dp"
-                        android:gravity="bottom"
-                        android:text="M2G ID (optional: easy to use wallet id)"
-                        android:textStyle="bold" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <android.support.v7.widget.AppCompatEditText
-                            android:id="@+id/m2gid"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:hint="(M2G ID)"
-                            android:text="" />
-
-                        <android.support.v7.widget.AppCompatButton
-                            android:id="@+id/fetchm2gid"
-                            android:layout_width="0dp"
-                            android:layout_height="40dp"
-                            android:layout_weight="1"
-                            android:text="Lookup" />
-
-                        <android.support.v7.widget.AppCompatButton
-                            android:id="@+id/m2gidlink"
-                            android:layout_width="0dp"
-                            android:layout_height="40dp"
-                            android:layout_weight="1"
-                            android:text="Get AN ID" />
-
-                    </LinearLayout>
-
-                    <android.support.v7.widget.AppCompatTextView
                         android:id="@+id/addressText"
                         android:layout_width="match_parent"
                         android:layout_height="25dp"

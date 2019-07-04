@@ -1,6 +1,6 @@
 <resources>
-    <string name="buildString">M2G Android Miner\nBuild: v1.6.1 (09/13/2019)</string>
-    <string name="app_name">M2G Android Miner</string>
+    <string name="buildString">Wrkz Android Miner\nBuild: v1.6.1</string>
+    <string name="app_name">Wrkz Android Miner</string>
     <string name="navigation_drawer_open">Open Navigation Drawer</string>
     <string name="navigation_drawer_close">Close Navigation Drawer</string>
     <string name="mining_pool_address">Mining Pool Address</string>
@@ -17,11 +17,11 @@
     <string name="accepted">accepted</string>
     <string name="cpus">Cores</string>
 
-    <string name="websiteLink">&lt;a href=&quot;https://mine2gether.com&quot;&gt;mine2gether.com&lt;/a&gt;</string>
-    <string name="githubLink">&lt;a href=&quot;https://github.com/Mine2Gether/m2gAndroidMiner/releases&quot;&gt;m2g Android Miner&lt;/a&gt;</string>
-    <string name="discordLink">&lt;a href=&quot;https://discord.gg/yy5rJwX&quot;&gt;Mine2Gether Chat and Support&lt;/a&gt;</string>
+    <string name="websiteLink">&lt;a href=&quot;https://wrkz.work&quot;&gt;http://wrkz.work&lt;/a&gt;</string>
+    <string name="githubLink">&lt;a href=&quot;https://github.com/wrkzcoin/wrkz_android_miner&quot;&gt;Wrkz Android Miner&lt;/a&gt;</string>
+    <string name="discordLink">&lt;a href=&quot;https://chat.wrkz.work&quot;&gt;WrkzCoin Discord&lt;/a&gt;</string>
 
-    <string name="disclaimerText">M2G Android Miner is an open-source cryptocurrency miner for Android devices.\n\nRunning your CPU at a high setting for a prolonged duration may result in negative effects such as: battery drainage, slow response time, overheating, and may cause permanent damage to your device.\n\nWe recommend only using this software on low settings (below 50% of your available device threads and below 50% CPU Usage).\n\nBy using this application, you assume full responsibility for any damage that may be caused to your device, property or self by the M2G Android Miner.</string>
+    <string name="disclaimerText">Wrkz Android Miner is an open-source cryptocurrency miner for Android devices.\n\nRunning your CPU at a high setting for a prolonged duration may result in negative effects such as: battery drainage, slow response time, overheating, and may cause permanent damage to your device.\n\nWe recommend only using this software on low settings (below 50% of your available device threads and below 50% CPU Usage).\n\nBy using this application, you assume full responsibility for any damage that may be caused to your device, property or self by the This Android Miner.\n\nForked From: https://github.com/Mine2Gether/m2g_android_miner</string>
     <string-array name="threadNumbers">
         <item>1</item>
         <item>2</item>

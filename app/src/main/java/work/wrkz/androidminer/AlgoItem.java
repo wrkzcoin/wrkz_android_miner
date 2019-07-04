@@ -2,7 +2,7 @@
 //
 // Please see the included LICENSE file for more information.
 
-package m2g.mine2gether.androidminer;
+package work.wrkz.androidminer;
 
 import java.util.ArrayList;
 
