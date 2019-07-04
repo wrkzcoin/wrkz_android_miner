@@ -5,8 +5,9 @@ The binary files in `app\src\main\assets\` are compiled from https://github.com/
 
 **A simple cryptocurrency miner for android devices.**
 
-<img align="left" height="500" src="https://github.com/Mine2Gether/m2g_android_miner/blob/master/docs/images/miner.jpg">
-<img align="left" height="500" src="https://github.com/Mine2Gether/m2g_android_miner/blob/master/docs/images/settings.jpg">
-<img align="left" height="500" src="https://github.com/Mine2Gether/m2g_android_miner/blob/master/docs/images/stats.jpg">
-<img align="left" height="500" src="https://github.com/Mine2Gether/m2g_android_miner/blob/master/docs/images/about.jpg">
+<img align="left" height="500" src="https://github.com/wrkzcoin/wrkz_android_miner/blob/master/_screenshot/Screenshot_01.jpg">
+<img align="left" height="500" src="https://github.com/wrkzcoin/wrkz_android_miner/blob/master/_screenshot/Screenshot_02.jpg">
+<img align="left" height="500" src="https://github.com/wrkzcoin/wrkz_android_miner/blob/master/_screenshot/Screenshot_03.jpg">
+<img align="left" height="500" src="https://github.com/wrkzcoin/wrkz_android_miner/blob/master/_screenshot/Screenshot_04.jpg">
+<img align="left" height="500" src="https://github.com/wrkzcoin/wrkz_android_miner/blob/master/_screenshot/Screenshot_05.jpg">
 
