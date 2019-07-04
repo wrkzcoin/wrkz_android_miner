@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="m2g.mine2gether.androidminer.MainActivity"> <!--  tools:openDrawer="start" -->
+    tools:context="work.wrkz.androidminer.MainActivity"> <!--  tools:openDrawer="start" -->
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -31,10 +31,9 @@
                 android:id="@+id/imageView3"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
                 android:paddingTop="7dp"
-                android:paddingRight="60dp"
-                android:src="@drawable/ic_m2g" />
+                android:paddingRight="25dp"
+                android:src="@drawable/wrkz128" />
 
         </android.support.v7.widget.Toolbar>
 

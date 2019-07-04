@@ -2,7 +2,7 @@
 //
 // Please see the included LICENSE file for more information.
 
-package m2g.mine2gether.androidminer;
+package work.wrkz.androidminer;
 
 import android.content.Context;
 import android.os.AsyncTask;
@@ -49,7 +49,6 @@ public class SettingsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
         Button click;
-        Button btnFetchm2gid;
         EditText edPool;
 
         Spinner spPool;
@@ -60,10 +59,6 @@ public class SettingsFragment extends Fragment {
 
         PoolSpinAdapter poolAdapter;
         AlgoSpinAdapter algoAdapter;
-
-        TextView tvM2gidlink;
-
-        EditText edM2gid;
 
         View view = inflater.inflate(R.layout.fragment_settings, container, false);
         Context appContext = MainActivity.getContextOfApplication();
@@ -79,11 +74,6 @@ public class SettingsFragment extends Fragment {
         spThreads = view.findViewById(R.id.threads);
         spMaxCpu = view.findViewById(R.id.maxcpu);
 
-        tvM2gidlink = view.findViewById(R.id.m2gidlink);
-        btnFetchm2gid = view.findViewById(R.id.fetchm2gid);
-
-        edM2gid = view.findViewById(R.id.m2gid);
-
         poolAdapter = new PoolSpinAdapter(MainActivity.contextOfApplication, R.layout.spinner_text_color, Config.settings.getPools());
         spPool.setAdapter(poolAdapter);
 
@@ -96,8 +86,6 @@ public class SettingsFragment extends Fragment {
         if (suggested == 0) suggested = 1;
         ((TextView) view.findViewById(R.id.cpus)).setText(String.format("(%d %s)", cores, getString(R.string.cpus)));
 
-        tvM2gidlink.setText(Html.fromHtml("<a href=\"https://m2gid.mine2gether.com\">GET AN ID</a>"));
-        tvM2gidlink.setMovementMethod(LinkMovementMethod.getInstance());
 
         if (PreferenceHelper.getName("threads").equals("") == true) {
             selectSpinnerValue(spThreads, Integer.toString(suggested));
@@ -179,14 +167,6 @@ public class SettingsFragment extends Fragment {
             }
         });
 
-        btnFetchm2gid.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (edM2gid.getText().toString().equals("") == false) {
-                    new fetchM2Gid().execute("https://m2gid.mine2gether.com/api/fetch/" + edM2gid.getText());
-                }
-            }
-        });
 
         click.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -347,67 +327,5 @@ public class SettingsFragment extends Fragment {
                 break;
             }
         }
-    }
-
-    public class fetchM2Gid extends AsyncTask<String, Void, String> {
-
-        int Error = 0;
-
-        @Override
-        protected String doInBackground(String... url) {
-            String data = "";
-            try {
-
-                URL urlFetch = new URL(url[0]);
-                HttpURLConnection httpURLConnection = (HttpURLConnection) urlFetch.openConnection();
-                InputStream inputStream = httpURLConnection.getInputStream();
-                BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
-                String line = "";
-                while ((line = bufferedReader.readLine()) != null) {
-                    data = data + line;
-                }
-
-            } catch (MalformedURLException e) {
-                Error = 1;
-                Log.i(LOG_TAG, e.toString());
-                e.printStackTrace();
-            } catch (IOException e) {
-                Error = 1;
-                Log.i(LOG_TAG, e.toString());
-                e.printStackTrace();
-            } catch (Exception e) {
-                Error = 1;
-                Log.i(LOG_TAG, e.toString());
-            }
-
-            return data;
-        }
-
-        @Override
-        protected void onPostExecute(String result) {
-
-            try {
-                if (Error != 0) {
-                    Toast.makeText(MainActivity.getContextOfApplication(), "Error fetching M2G Id", Toast.LENGTH_SHORT).show();
-                    return;
-                }
-                JSONObject joM2Gid = new JSONObject(result);
-                String sError = joM2Gid.optString("error");
-                if (sError.equals("")) {
-                    String sWallet = joM2Gid.optString("data1");
-                    String sPassword = joM2Gid.optString("data2");
-                    edUser.setText(sWallet);
-                    edPass.setText(sPassword);
-                } else {
-                    Toast.makeText(MainActivity.getContextOfApplication(), "Error: " + sError, Toast.LENGTH_SHORT).show();
-                }
-            } catch (JSONException e) {
-                Log.i(LOG_TAG, e.toString());
-                e.printStackTrace();
-            } catch (Exception e) {
-                Log.i(LOG_TAG, e.toString());
-            }
-        }
-
     }
 }

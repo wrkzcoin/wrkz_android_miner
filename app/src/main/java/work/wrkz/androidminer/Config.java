@@ -2,7 +2,7 @@
 //
 // Please see the included LICENSE file for more information.
 
-package m2g.mine2gether.androidminer;
+package work.wrkz.androidminer;
 
 import java.util.ArrayList;
 
@@ -45,77 +45,77 @@ public class Config {
         mAlgos.add(new AlgoItem("chukwa", ""));
         mAlgos.add(new AlgoItem("chukwa/wrkz", ""));
 
-        // Loki Network (LOKI) + Turtlecoin (TRTL) Merged Mining|loki.pool.mine2gether.com:2221|cn-pico/trtl
+        // Loki Network (LOKI) + Turtlecoin (TRTL) Merged Mining|loki.pool.wrkz.com:2221|cn-pico/trtl
         mPools.add(new PoolItem(
                         "loki",
                         "Loki Network (LOKI) + Turtlecoin (TRTL) Merged Mining",
-                        "loki.pool.mine2gether.com:2221",
+                        "loki.pool.wrkz.com:2221",
                         "cn-pico/trtl",
-                        "https://loki.mine2gether.com/api",
-                        "https://loki.mine2gether.com",
-                        "https://loki.mine2gether.com/#my_stats",
-                        "https://loki.mine2gether.com/#getting_started",
-                        "https://trtl.mine2gether.com/api"
+                        "https://loki.wrkz.com/api",
+                        "https://loki.wrkz.com",
+                        "https://loki.wrkz.com/#my_stats",
+                        "https://loki.wrkz.com/#getting_started",
+                        "https://trtl.wrkz.com/api"
                 )
         );
 
-        // XtendCash (XTNC) + Turtlecoin (TRTL) Merged Mining|xtnc.pool.mine2gether.com:2222|cn-pico/trtl
+        // XtendCash (XTNC) + Turtlecoin (TRTL) Merged Mining|xtnc.pool.wrkz.com:2222|cn-pico/trtl
         mPools.add(new PoolItem(
                         "xtnc",
                         "XtendCash (XTNC) + Turtlecoin (TRTL) Merged Mining",
-                        "xtnc.pool.mine2gether.com:2222",
+                        "xtnc.pool.wrkz.com:2222",
                         "cn-pico/trtl",
-                        "https://xtnc.mine2gether.com/api",
-                        "https://xtnc.mine2gether.com",
-                        "https://xtnc.mine2gether.com/#my_stats",
-                        "https://xtnc.mine2gether.com/#getting_started",
-                        "https://trtl.mine2gether.com/api"
+                        "https://xtnc.wrkz.com/api",
+                        "https://xtnc.wrkz.com",
+                        "https://xtnc.wrkz.com/#my_stats",
+                        "https://xtnc.wrkz.com/#getting_started",
+                        "https://trtl.wrkz.com/api"
                 )
         );
 
-        // Turtlecoin (TRTL)|trtl.pool.mine2gether.com:2225|cn-pico/trtl
+        // Turtlecoin (TRTL)|trtl.pool.wrkz.com:2225|cn-pico/trtl
         mPools.add(new PoolItem(
                         "trtl",
                         "Turtlecoin (TRTL)",
-                        "trtl.pool.mine2gether.com:2225",
+                        "trtl.pool.wrkz.com:2225",
                         "cn-pico/trtl",
-                        "https://trtl.mine2gether.com/api",
-                        "https://trtl.mine2gether.com",
-                        "https://trtl.mine2gether.com/#my_stats",
-                        "https://trtl.mine2gether.com/#getting_started",
-                        "https://trtl.mine2gether.com/api"
+                        "https://trtl.wrkz.com/api",
+                        "https://trtl.wrkz.com",
+                        "https://trtl.wrkz.com/#my_stats",
+                        "https://trtl.wrkz.com/#getting_started",
+                        "https://trtl.wrkz.com/api"
                 )
         );
 
-        // Alloy (XAO)|xao.pool.mine2gether.com:1117|cn/xao
+        // Alloy (XAO)|xao.pool.wrkz.com:1117|cn/xao
         mPools.add(new PoolItem(
                         "xao",
                         "Alloy (XAO)",
-                        "xao.pool.mine2gether.com:1117",
+                        "xao.pool.wrkz.com:1117",
                         "cn/xao",
-                        "https://xao.mine2gether.com/api",
-                        "https://xao.mine2gether.com",
-                        "https://xao.mine2gether.com/#my_stats",
-                        "https://xao.mine2gether.com/#getting_started",
+                        "https://xao.wrkz.com/api",
+                        "https://xao.wrkz.com",
+                        "https://xao.wrkz.com/#my_stats",
+                        "https://xao.wrkz.com/#getting_started",
                         ""
                 )
         );
 
-        // Citadel (CTL)|ctl.pool.mine2gether.com:1114|cn/1
+        // Citadel (CTL)|ctl.pool.wrkz.com:1114|cn/1
         mPools.add(new PoolItem(
                         "ctl",
                         "Citadel (CTL)",
-                        "ctl.pool.mine2gether.com:1114",
+                        "ctl.pool.wrkz.com:1114",
                         "cn/1",
-                        "https://ctl.mine2gether.com/api",
-                        "https://ctl.mine2gether.com",
-                        "https://ctl.mine2gether.com/#my_stats",
-                        "https://ctl.mine2gether.com/#getting_started",
+                        "https://ctl.wrkz.com/api",
+                        "https://ctl.wrkz.com",
+                        "https://ctl.wrkz.com/#my_stats",
+                        "https://ctl.wrkz.com/#getting_started",
                         ""
                 )
         );
 
-        // WrkzCoin TestNet (TRTL)|trtl.pool.mine2gether.com:2225|cn-pico/trtl
+        // WrkzCoin TestNet (TRTL)|trtl.pool.wrkz.com:2225|cn-pico/trtl
         mPools.add(new PoolItem(
                         "wrkz",
                         "WrkzCoin TestNet (WRKZ)",
